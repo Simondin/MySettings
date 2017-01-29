@@ -50,6 +50,9 @@ set number              " show line numbers
 set showcmd             " show command in bottom bar
 set t_Co=256
 set hlsearch
+"This option set the behavior of backspace key"
+"Without this you shall not delete in some case"
+set backspace=indent,eol,start
 syntax on
 set background=dark
 syntax enable
