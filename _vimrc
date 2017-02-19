@@ -2,7 +2,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+="%HOME/Vim/vimfiles/bundle/Vundle.vim"
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -88,3 +88,9 @@ colorscheme Tomorrow-Night
 " MAPPINGS "
 """"""""""""
 map <C-S-n> :NERDTreeToggle<CR>
+
+"Set the status line options. Make it show more information.
+set laststatus=2
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\
+[POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
+
