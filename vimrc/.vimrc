@@ -9,7 +9,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'chriskempson/tomorrow-theme'
+Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 Plugin 'mhinz/vim-janah'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'scrooloose/nerdtree'
