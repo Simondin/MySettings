@@ -10,6 +10,17 @@ export ZSH=/Users/simonedimarco/.oh-my-zsh
 #ZSH_THEME="mh"
 ZSH_THEME="spaceship"
 
+SPACESHIP_PROMPT_ORDER=(
+    user
+    dir
+    host
+    git
+    line_sep
+    char
+)
+
+SPACESHIP_USER_SHOW=always
+
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
@@ -95,4 +106,11 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+export PATH="/usr/local/opt/python@3.9/bin:$PATH"
+
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
+export PATH="/usr/local/opt/node@16/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/node@16/lib"
+export CPPFLAGS="-I/usr/local/opt/node@16/include"
